@@ -18,5 +18,5 @@ export default new Router({
       component: Bag,
     },
   ],
-  mode: 'history'
+  mode: 'history',
 });
