@@ -11,6 +11,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     "linebreak-style": 0,
+    "indent": ["error", "tab"],
+    // "max-len": [2, 200, 4, {"ignoreUrls": true}],
     "no-tabs": 0,
   },
   parserOptions: {

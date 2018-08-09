@@ -1,12 +1,9 @@
 <template>
 	<div class="home">
-		<img src="../assets/logo.png">
-		<!-- <Offer msg="Welcome to Your Vue.js App"/> -->
-		
-		
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
+					<AddProduct/>
 					<List/>
 				</div>
 			</div>
@@ -16,14 +13,20 @@
 
 <script>
 // @ is an alias to /src
-
-import Offer from '@/components/Offer.vue';
 import List from '@/components/List.vue';
+import AddProduct from '@/components/AddProduct.vue';
 
 export default {
 	name: 'home',
 	components: {
-		Offer, List,
+		List, AddProduct,
 	},
 };
 </script>
+
+<style lang="scss">
+	.home {
+		padding: 1rem;
+	}
+</style>
+
