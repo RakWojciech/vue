@@ -1,5 +1,5 @@
 <template>
-	<div class="bag">
+	<div class="bag gap">
 		<h1>{{offers[$route.params.index].title}}</h1>
 	</div>
 </template>

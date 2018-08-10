@@ -13,10 +13,18 @@
 						<router-link to="/" class="nav-link">Home</router-link>
 					</li>
 					<li class="nav-item active">
-						<!-- <router-link to="/bag" class="nav-link">Bag ({{products.length}})</router-link> -->
+						<!-- <router-link to="/bag" class="nav-link">Bag ()</router-link> -->
 					</li>
 					<li class="nav-item active">
 						<router-link to="/add-product" class="nav-link">Add Product</router-link>
+					</li>
+					<li class="nav-item active">
+						<router-link to="/bag" class="nav-link"> <img src="./assets/bag.svg" alt="">
+							<b v-if="product">({{products.length}})</b>
+						 </router-link>
+					</li>
+					<li class="nav-item active">
+						<router-link to="/login" class="nav-link">Login</router-link>
 					</li>
 				</ul>
 			</div>
@@ -36,14 +44,18 @@ export default {
 </script>
 
 <style lang="scss">
+	body {
+		background-color: #e3e3e3;
+	}
 	#app {
 		font-family: 'Avenir', Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		background-color: #e3e3e3;
 		color: #2c3e50;
 	}
-
+	.gap {
+		padding: 1rem;
+	}
 	.btn {
 		background-color: #7331e2;
 		border: none;
