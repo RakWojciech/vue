@@ -7,7 +7,7 @@
 						#{{index+1}}
 					</div> -->
 					<!-- <div class="card-body"> -->
-						
+
 						<div class="product-box w-100 d-flex align-items-center justify-content-between">
 							<div class="product w-100">
 								<h4 class="product__text product__text--title">{{book.product_title}}</h4>
@@ -53,7 +53,7 @@
 				console.log(offer.product_title, index);
 				existProduct = offer.product_title;
 				if(products.includes(offer.product_title)) {
-					
+
 				}else{
 					products.push(offer.product_title.toString());
 					localStorage.setItem("products", JSON.stringify(products));
@@ -83,6 +83,14 @@
 	.product {
 		&__text {
 			margin: 0;
+			&--title {
+
+			}
+			&--author {
+				span {
+					color: #7331e2;
+				}
+			}
 		}
 	}
 	&__btn {
