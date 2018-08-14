@@ -1,5 +1,5 @@
 <template>
-	<div class="home">
+	<div class="home gap">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
@@ -13,8 +13,8 @@
 
 <script>
 // @ is an alias to /src
-import List from '@/components/List.vue';
-import AddProduct from '@/components/AddProduct.vue';
+import List from '@/views/List.vue';
+import AddProduct from '@/views/AddProduct.vue';
 
 export default {
 	name: 'home',
@@ -23,10 +23,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-	.home {
-		padding: 1rem;
-	}
-</style>
-
